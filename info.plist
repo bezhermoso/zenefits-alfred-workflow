@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.bezhermoso.alfred-zenefits</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>2BB8F100-17C0-46D8-9235-5A20E6769C52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>766F5E53-B14A-424E-B065-9CF3E0D9B13C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Bez Hermoso</string>
+	<key>description</key>
+	<string>Login, logout, start meal, and end meal in Zenefits</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Zenefits</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node /usr/local/bin/zenefits {query} &amp;</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>766F5E53-B14A-424E-B065-9CF3E0D9B13C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Clock in","arg":"in","subtitle":"Clock in on Zenefits"},{"title":"Clock out","arg":"out","subtitle":"Clock out on Zenefits"},{"title":"Start meal","arg":"lunch","subtitle":"Start meal on Zenefits"},{"title":"End meal","arg":"endlunch","subtitle":"End meal on Zenefits"}]</string>
+				<key>keyword</key>
+				<string>zenefits</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Zenefits operations</string>
+				<key>title</key>
+				<string>Zenefits...</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2BB8F100-17C0-46D8-9235-5A20E6769C52</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2BB8F100-17C0-46D8-9235-5A20E6769C52</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>766F5E53-B14A-424E-B065-9CF3E0D9B13C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/bezhermoso/zenefits-cli</string>
+</dict>
+</plist>
